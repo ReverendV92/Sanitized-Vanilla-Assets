@@ -1,0 +1,1 @@
+The skyboxes in HL2: Update are slightly modified from their original HL2 settings, and require some changes.

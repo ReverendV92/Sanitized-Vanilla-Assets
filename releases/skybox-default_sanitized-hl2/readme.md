@@ -1,0 +1,1 @@
+Changes the skyboxes from the older-style unlitgeneric to the sky material type. Also includes stand-ins for the skies that don't have HDR materials.
