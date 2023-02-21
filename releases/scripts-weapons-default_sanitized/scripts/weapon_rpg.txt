@@ -2,76 +2,99 @@
 
 WeaponData
 {
-	// Weapon data is loaded by both the Game and Client DLLs.
-	"printname"	"#HL2_RPG"
-	"viewmodel"				"models/weapons/v_rpg.mdl"
-	"playermodel"			"models/weapons/w_rocket_launcher.mdl"
-	"anim_prefix"			"missile launcher"
-	"bucket"				"4"
-	"bucket_position"		"1"
-	"autoswitchfrom"		"0"
-	"bucket_360"			"3"
-	"bucket_position_360"	"1"
 
-	"clip_size"				"-1"
-	"clip2_size"			"-1"
-	"default_clip"			"3"
-	"default_clip2"			"-1"
+	printname #hl2_rpg
+	viewmodel models/weapons/v_rpg.mdl
+	playermodel models/weapons/w_rocket_launcher.mdl
+	anim_prefix "missile launcher"
 
-	"primary_ammo"			"rpg_round"
-	"secondary_ammo"		"None"
+	bucket 4
+	bucket_position 1
+	bucket_360 3
+	bucket_position_360 1
 
-	"autoswitchto"			"0"
-	"weight"				"0"
-	"item_flags"			"2"
+	primary_ammo rpg_round
+	clip_size -1
+	default_clip 3
 
-	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
-	SoundData
+	secondary_ammo None
+	clip2_size -1
+	default_clip2 -1
+
+	autoswitchto 0
+	autoswitchfrom 0
+
+	weight 0
+	item_flags 0
+	rumble 8
+
+	sounddata
 	{
-		"single_shot"		"Weapon_RPG.Single"
-		"single_shot_npc"	"Weapon_RPG.NPC_Single"
+
+		empty weapon_smg1.empty
+
+		single_shot weapon_rpg.single
+		single_shot_npc weapon_rpg.npc_single
+
 		//Laser on
-		"special1"			"Weapon_RPG.LaserOn"
+		special1 weapon_rpg.laseron
+
 		//Laser off
-		"special2"			"Weapon_RPG.LaserOff"
-		"empty"				"Weapon_SMG1.Empty"
+		special2 weapon_rpg.laseroff
+
 	}
 
-	// Weapon Sprite data is loaded by the Client DLL.
-	TextureData
+	texturedata
 	{
-		"weapon"
+
+		weapon
 		{
-				"font"		"WeaponIcons"
-				"character"	"i"
+
+			font weaponicons
+			character i
+
 		}
-		"weapon_s"
+
+		weapon_s
 		{	
-				"font"		"WeaponIconsSelected"
-				"character"	"i"
+
+			font weaponiconsselected
+			character i
+
 		}
-		"weapon_small"
+
+		weapon_small
 		{
-				"font"		"WeaponIconsSmall"
-				"character"	"i"
+
+			font weaponiconssmall
+			character i
+
 		}
-		"ammo"
+
+		ammo
 		{
-				"font"		"WeaponIconsSmall"
-				"character"	"x"
+
+			font weaponiconssmall
+			character x
+
 		}
-		"crosshair"
+
+		crosshair
 		{
-				"font"		"Crosshairs"
-				"character"	"Q"
+
+			font crosshairs
+			character Q
+
 		}
-		"autoaim"
+
+		autoaim
 		{
-				"file"		"sprites/crosshairs"
-				"x"			"48"
-				"y"			"72"
-				"width"		"24"
-				"height"	"24"
+
+			font crosshairs
+			character Q
+
 		}
+
 	}
+
 }

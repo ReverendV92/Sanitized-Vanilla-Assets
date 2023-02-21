@@ -1,32 +1,36 @@
 
+//////////////////////////////
 // Citizen Suitcase
+//////////////////////////////
 
 weapondata
 {
 
-	printname "Suitcase"
+	printname Suitcase
 	viewmodel models/weapons/w_suitcase_passenger.mdl
 	playermodel models/weapons/w_suitcase_passenger.mdl
 	anim_prefix smg2
+
 	bucket 2
 	bucket_position 0
-	bucket_360 3
-	bucket_position_360 3
 
+	primary_ammo None
 	clip_size -1
 	default_clip -1
-	primary_ammo None
 
+	secondary_ammo None
 	clip2_size -1
 	default_clip2 -1
-	secondary_ammo None
+
+	autoswitchto 0
+	autoswitchfrom 0
 
 	weight 0
-	rumble 1
-	item_flags 194
+	item_flags 0
 
 	sounddata
 	{
+
 	}
 
 	texturedata
@@ -68,22 +72,16 @@ weapondata
 		crosshair
 		{
 
-			file sprites/crosshairs
-			x 0
-			y 48
-			width 24
-			height 24
+			font crosshairs
+			character Q
 
 		}
 
 		autoaim
 		{
 
-			file sprites/crosshairs
-			x 0
-			y 48
-			width 24
-			height 24
+			font crosshairs
+			character Q
 
 		}
 

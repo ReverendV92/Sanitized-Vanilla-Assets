@@ -1,65 +1,98 @@
-// stunstick
 
-WeaponData
+//////////////////////////////
+// Stunstick
+//////////////////////////////
+
+weapondata
 {
-	// Weapon data is loaded by both the Game and Client DLLs.
-	"printname"	"#HL2_StunBaton"
-	"viewmodel"				"models/weapons/v_stunbaton.mdl"
-	"playermodel"			"models/weapons/w_stunbaton.mdl"
-	"anim_prefix"			"stunbaton"
-	"bucket"				"0"
-	"bucket_position"		"3"
 
-	"clip_size"				"-1"
-	"primary_ammo"			"None"
-	"secondary_ammo"		"None"
+	printname #hl2_stunbaton
+	viewmodel models/weapons/v_stunbaton.mdl
+	playermodel models/weapons/w_stunbaton.mdl
+	anim_prefix stunbaton
 
-	"weight"				"0"
-	"item_flags"			"0"
+	bucket 0
+	bucket_position 3
 
-	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
-	SoundData
+	primary_ammo None
+	clip_size -1
+
+	secondary_ammo None
+
+	meleeweapon 1
+
+	autoswitchto 0
+	autoswitchfrom 0
+
+	weight 0
+	item_flags 32
+	rumble 9
+
+	sounddata
 	{
 
-		"single_shot"		"Weapon_StunStick.Swing"
-		"melee_miss"		"Weapon_StunStick.Melee_Miss"
-		"melee_hit"			"Weapon_StunStick.Melee_Hit"
-		"melee_hit_world"	"Weapon_StunStick.Melee_HitWorld"
+		single_shot weapon_stunstick.swing
+
+		melee_hit weapon_stunstick.melee_hit
+		melee_hit_world weapon_stunstick.melee_hitworld
+		melee_miss weapon_stunstick.melee_miss
+
 	}
 
-	// Weapon Sprite data is loaded by the Client DLL.
-	TextureData
+	texturedata
 	{
-		"weapon"
+
+		weapon
 		{
-				"font"		"WeaponIcons"
-				"character"	"n"
+
+			font weaponicons
+			character n
+
 		}
-		"weapon_s"
+
+		weapon_s
 		{
-				"font"		"WeaponIconsSelected"
-				"character"	"n"
+
+			font weaponiconsselected
+			character n
+
 		}
-		"ammo"
+
+		ammo
 		{
-				"font"		"WeaponIcons"
-				"character"	"n"
+
+			font weaponicons
+			character n
+
 		}
-		"crosshair"
+
+		ammo2
 		{
-				"file"		"sprites/crosshairs"
-				"x"			"0"
-				"y"			"48"
-				"width"		"24"
-				"height"	"24"
+
+			file sprites/640hud7
+			x 48
+			y 72
+			width 24
+			height 24
+
 		}
-		"autoaim"
+
+		crosshair
 		{
-				"file"		"sprites/crosshairs"
-				"x"			"48"
-				"y"			"72"
-				"width"		"24"
-				"height"	"24"
+
+			font crosshairs
+			character Q
+
 		}
+
+		autoaim
+		{
+
+			font crosshairs
+			character Q
+
+		}
+
 	}
+
 }

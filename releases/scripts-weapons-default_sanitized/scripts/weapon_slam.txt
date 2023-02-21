@@ -1,63 +1,85 @@
-// Slam
 
-WeaponData
+// SLAM
+
+weapondata
 {
-	.
-	"printname"	"#HL2_SLAM"
-	"viewmodel"				"models/weapons/v_slam.mdl"
-	"playermodel"			"models/weapons/w_slam.mdl"
-	"anim_prefix"			"slam"
-	"bucket"				"4"
-	"bucket_position"		"2"
 
-	"clip_size"				"-1"
-	"clip2_size"			"-1"
-	"default_clip"			"1"
-	"default_clip2"			"-1"
+	printname #hl2_slam
+	viewmodel models/weapons/v_slam.mdl
+	playermodel models/weapons/w_slam.mdl
+	anim_prefix slam
+
+	bucket 4
+	bucket_position 2
+
+	primary_ammo slam
+	clip_size -1
+	default_clip 1
+
+	secondary_ammo None
+	clip2_size -1
+	default_clip2 -1
 	
-	"primary_ammo"			"slam" //None
-	"secondary_ammo"		"None" //slam
+	autoswitchto 0
+	autoswitchfrom 0
 
-	"weight"				"1"
-	"item_flags"			"2"
+	weight 1
+	item_flags 0
+	rumble 9
 
-	"usesmallicon"			"0"
+	usesmallicon 0
 
-	.
-	TextureData
+	texturedata
 	{
-		"weapon"
+
+		weapon
 		{
-				"font"		"WeaponIcons"
-				"character"	"o"
+
+			font weaponicons
+			character o
+
 		}
-		"weapon_s"
+
+		weapon_s
 		{
-				"font"		"WeaponIconsSelected"
-				"character"	"o"
+
+			font weaponiconsselected
+			character o
+
 		}
-		"weapon_small"
+
+		weapon_small
 		{
-				"font"		"WeaponIconsSmall"
-				"character"	"o"
+
+			font weaponiconssmall
+			character o
+
 		}
-		"ammo"
+
+		ammo
 		{
-				"font"		"WeaponIconsSmall"
-				"character"	"o"
+
+			font weaponiconssmall
+			character o
+
 		}
-		"crosshair"
+
+		crosshair
 		{
-				"font"		"Crosshairs"
-				"character"	"Q"
+
+			font crosshairs
+			character Q
+
 		}
-		"autoaim"
+
+		autoaim
 		{
-				"file"		"sprites/crosshairs"
-				"x"			"48"
-				"y"			"72"
-				"width"		"24"
-				"height"	"24"
+
+			font crosshairs
+			character Q
+
 		}
+
 	}
+
 }

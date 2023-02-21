@@ -1,5 +1,7 @@
 
-// .357 Magnum
+//////////////////////////////
+// .357 Colt Python
+//////////////////////////////
 
 weapondata
 {
@@ -8,28 +10,31 @@ weapondata
 	viewmodel models/weapons/v_357.mdl
 	playermodel models/weapons/w_357.mdl
 	anim_prefix python
+
 	bucket 1
 	bucket_position 1
 	bucket_360 0
 	bucket_position_360 1
 
+	primary_ammo 357
 	clip_size 6
 	default_clip 6
-	primary_ammo 357
 
-	clip2_size -1
-	default_clip2 -1
 	secondary_ammo None
 
+	autoswitchto 0
+	autoswitchfrom 0
+
 	weight 0
-	rumble 2
 	item_flags 32
+	rumble 5
 
 	sounddata
 	{
 
-		empty Weapon_Pistol.Empty
-		single_shot Weapon_357.Single
+		empty weapon_pistol.empty
+
+		single_shot weapon_357.single
 
 	}
 
@@ -38,50 +43,50 @@ weapondata
 
 		weapon
 		{
-			font WeaponIcons
+
+			font weaponicons
 			character e
+
 		}
 
 		weapon_s
-		{	
-			font WeaponIconsSelected
+		{ 
+
+			font weaponiconsselected
 			character e
+
 		}
 
 		weapon_small
 		{
-			font WeaponIconsSmall
+
+			font weaponiconssmall
 			character e
+
 		}
 
 		ammo
 		{
-			font WeaponIconsSmall
+
+			font weaponiconssmall
 			character q
+
 		}
 
 		crosshair
 		{
-			font Crosshairs
+
+			font crosshairs
 			character Q
+
 		}
 
 		autoaim
 		{
-			font Crosshairs
-			character Q
-		}
 
-		zoom
-		{
-			font Crosshairs
+			font crosshairs
 			character Q
-		}
 
-		zoom_autoaim
-		{
-			font Crosshairs
-			character Q
 		}
 
 	}

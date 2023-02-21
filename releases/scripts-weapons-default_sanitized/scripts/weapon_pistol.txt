@@ -1,74 +1,103 @@
-// Pistol
 
-WeaponData
+//////////////////////////////
+// H&K USP Match 9x19mm
+//////////////////////////////
+
+weapondata
 {
-	// Weapon data is loaded by both the Game and Client DLLs.
-	"printname"	"#HL2_Pistol"
-	"viewmodel"			"models/weapons/v_pistol.mdl"
-	"playermodel"		"models/weapons/w_pistol.mdl"
-	"anim_prefix"		"pistol"
-	"bucket"			"1"
-	"bucket_position"	"0"
-	"bucket_360"			"0"
-	"bucket_position_360"	"0"
 
-	"clip_size"			"18"
-	"primary_ammo"		"Pistol"
-	"secondary_ammo"	"None"
+	printname #hl2_pistol
+	viewmodel models/weapons/v_pistol.mdl
+	playermodel models/weapons/w_pistol.mdl
+	anim_prefix pistol
 
-	"weight"		"2"
-	"rumble"		"1"
-	"item_flags"		"0"
+	bucket 1
+	bucket_position 0
+	bucket_360 0
+	bucket_position_360 0
 
-	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
-	SoundData
+	primary_ammo Pistol
+	clip_size 18
+	default_clip 18
+
+	secondary_ammo None
+
+	autoswitchto 0
+	autoswitchfrom 0
+
+	weight 0
+	item_flags 32
+	rumble 2
+
+	sounddata
 	{
 
-		"reload"		"Weapon_Pistol.Reload"
-		"reload_npc"	"Weapon_Pistol.NPC_Reload"
-		"empty"			"Weapon_Pistol.Empty"
-		"single_shot"	"Weapon_Pistol.Single"
-		"single_shot_npc"	"Weapon_Pistol.NPC_Single"
-		"special1"		"Weapon_Pistol.Special1"
-		"special2"		"Weapon_Pistol.Special2"
-		"burst"			"Weapon_Pistol.Burst"
+		empty weapon_pistol.empty
+
+		single_shot weapon_pistol.single
+		single_shot_npc weapon_pistol.npc_single
+
+		burst weapon_pistol.burst
+
+		reload weapon_pistol.reload
+		reload_npc weapon_pistol.npc_reload
+
+		special1 weapon_pistol.special1
+		special2 weapon_pistol.special2
+
 	}
 
-	// Weapon Sprite data is loaded by the Client DLL.
-	TextureData
+	texturedata
 	{
-		"weapon"
+
+		weapon
 		{
-				"font"		"WeaponIcons"
-				"character"	"d"
+
+			font weaponicons
+			character d
+
 		}
-		"weapon_s"
+
+		weapon_s
 		{	
-				"font"		"WeaponIconsSelected"
-				"character"	"d"
+
+			font weaponiconsselected
+			character d
+
 		}
-		"weapon_small"
+
+		weapon_small
 		{
-				"font"		"WeaponIconsSmall"
-				"character"	"d"
+
+			font weaponiconssmall
+			character d
+
 		}
-		"ammo"
+
+		ammo
 		{
-				"font"		"WeaponIconsSmall"
-				"character"	"p"
+
+			font weaponiconssmall
+			character p
+
 		}
-		"crosshair"
+
+		crosshair
 		{
-				"font"		"Crosshairs"
-				"character"	"Q"
+
+			font crosshairs
+			character Q
+
 		}
-		"autoaim"
+
+		autoaim
 		{
-				"file"		"sprites/crosshairs"
-				"x"			"0"
-				"y"			"48"
-				"width"		"24"
-				"height"	"24"
+
+			font crosshairs
+			character Q
+
 		}
+
 	}
+
 }

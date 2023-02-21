@@ -1,5 +1,7 @@
 
-// Shotgun
+//////////////////////////////
+// SPAS-12 Shotgun
+//////////////////////////////
 
 weapondata
 {
@@ -8,32 +10,39 @@ weapondata
 	viewmodel models/weapons/v_shotgun.mdl
 	playermodel models/weapons/w_shotgun.mdl
 	anim_prefix shotgun
+
 	bucket 3
 	bucket_position 0
 	bucket_360 1
 	bucket_position_360 1
 
+	primary_ammo buckshot
 	clip_size 6
 	default_clip 6
-	primary_ammo Buckshot
 
-	clip2_size -1
-	default_clip2 -1
 	secondary_ammo None
+
+	autoswitchto 0
+	autoswitchfrom 0
 
 	weight 0
 	rumble 5
-	item_flags 0
+	item_flags 32
 
 	sounddata
 	{
 
-		single_shot_npc weapon_shotgun.npc_single
-		reload weapon_shotgun.reload
-		special1 weapon_shotgun.special1
 		empty weapon_shotgun.empty
+
 		single_shot weapon_shotgun.single
+		single_shot_npc weapon_shotgun.npc_single
+
 		double_shot weapon_shotgun.double
+
+		reload weapon_shotgun.reload
+		reload_npc weapon_shotgun.npc_reload
+
+		special1 weapon_shotgun.special1
 
 	}
 
@@ -42,38 +51,50 @@ weapondata
 
 		weapon
 		{
-			font WeaponIcons
+
+			font weaponicons
 			character b
+
 		}
 
 		weapon_s
 		{	
-			font WeaponIconsSelected
+
+			font weaponiconsselected
 			character b
+
 		}
 
 		weapon_small
 		{
-			font WeaponIconsSmall
+
+			font weaponiconssmall
 			character b
+
 		}
 
 		ammo
 		{
-			font WeaponIconsSmall
+
+			font weaponiconssmall
 			character s
+
 		}
 
 		crosshair
 		{
-			font Crosshairs
+
+			font crosshairs
 			character Q
+
 		}
 
 		autoaim
 		{
-			font Crosshairs
+
+			font crosshairs
 			character Q
+
 		}
 
 	}

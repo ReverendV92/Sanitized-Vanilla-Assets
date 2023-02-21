@@ -1,93 +1,73 @@
 
+//////////////////////////////
 // Alyx Gun
+//////////////////////////////
 
-WeaponData
+weapondata
 {
 
-	printname #hl2_alyxgun
+	printname "Alyx Gun"
 	viewmodel models/weapons/w_alyx_gun.mdl
 	playermodel models/weapons/w_alyx_gun.mdl
 	anim_prefix alyxgun
 	bucket 1
 	bucket_position 4
-	bucket_360 0
-	bucket_position_360 3
 
+	primary_ammo alyxgun
 	clip_size 30
 	default_clip 30
-	primary_ammo AlyxGun
 
+	secondary_ammo None
 	clip2_size -1
 	default_clip2 -1
-	secondary_ammo None
 
 	weight 0
-	rumble 2
 	item_flags 32
+	rumble 2
 
-	SoundData
+	sounddata
 	{
 
-		single_shot_npc Weapon_Pistol.NPC_Single
-		// reload Weapon_Pistol.Reload
-		// reload_npc Weapon_Pistol.NPC_Reload
-		// empty Weapon_Pistol.Empty
-		// single_shot Weapon_Pistol.Single
-		// special1 Weapon_Pistol.Special1
-		// special2 Weapon_Pistol.Special2
-		// burst Weapon_Pistol.Burst
+		empty weapon_alyx_gun.empty
+
+		single_shot weapon_alyx_gun.single
+		single_shot_npc weapon_alyx_gun.npc_single
+
+		burst weapon_alyx_gun.burst
+
+		reload weapon_alyx_gun.reload
+		reload_npc weapon_alyx_gun.npc_reload
+
+		special1 weapon_alyx_gun.special1
+		special2 weapon_alyx_gun.special2
 
 	}
 
-	TextureData
+	texturedata
 	{
-
-		weapon
-		{
-			font WeaponIcons
-			character A
-		}
-
-		weapon_s
-		{	
-			font WeaponIconsSelected
-			character A
-		}
-
-		weapon_small
-		{
-			font WeaponIconsSmall
-			character A
-		}
 
 		ammo
 		{
-			font WeaponIconsSmall
-			character P
+
+			font weaponiconssmall
+			character p
+
 		}
 
 		crosshair
 		{
-			font Crosshairs
+
+			font crosshairs
 			character Q
+
 		}
 
 		autoaim
 		{
-			font Crosshairs
-			character Q
-		}
 
-		zoom
-		{
-			font Crosshairs
+			font crosshairs
 			character Q
-		}
 
-		zoom_autoaim
-		{
-			font Crosshairs
-			character Q
 		}
 
 	}

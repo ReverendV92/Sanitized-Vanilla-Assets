@@ -1,72 +1,93 @@
-// Physics Gun
 
-WeaponData
+//////////////////////////////
+// Gravity Gun
+//////////////////////////////
+
+weapondata
 {
-	// Weapon data is loaded by both the Game and Client DLLs.
-	"printname"	"#HL2_GravityGun"
-	"viewmodel"			"models/weapons/v_physcannon.mdl"
-	"playermodel"		"models/weapons/w_Physics.mdl"
-	"anim_prefix"		"gauss"
-	"bucket"			"0"
-	"bucket_position"	"1"
-	"bucket_360"			"2"
-	"bucket_position_360"	"1"
-	"clip_size"			"1"
-	"clip2_size"		"0"
-	"primary_ammo"		"None"
-	"secondary_ammo"	"None"
-	"default_clip"		"0"
-	"default_clip2"		"0"
-	"weight"			"0"
-	"autoswitchto"		"0"
-	"autoswitchfrom"	"0"
-	"item_flags"		"2"
 
-	SoundData
+	printname #hl2_gravitygun
+	viewmodel models/weapons/v_physcannon.mdl
+	playermodel models/weapons/w_Physics.mdl
+	anim_prefix gauss
+
+	bucket 0
+	bucket_position 1
+	bucket_360 2
+	bucket_position_360 1
+
+	primary_ammo None
+	clip_size 1
+	default_clip 0
+
+	secondary_ammo None
+	clip2_size 0
+	default_clip2 0
+
+	autoswitchto 0
+	autoswitchfrom 0
+
+	weight 0
+	item_flags 0
+	rumble 22
+
+	sounddata
 	{
+
 		// launch held object
-		"single_shot"		"Weapon_PhysCannon.Launch"
-		// Ignore?
-		"reload"			"Weapon_PhysCannon.Charge"
+		single_shot weapon_physcannon.launch
+		// ignore?
+		reload weapon_physcannon.charge
 		// dry fire - no target
-		"empty"				"Weapon_PhysCannon.DryFire"
+		empty weapon_physcannon.dryfire
 		// pick up object
-		"special1"			"Weapon_PhysCannon.Pickup"
+		special1 weapon_physcannon.pickup
 		// open claws, target object
-		"special2"			"Weapon_PhysCannon.OpenClaws"
-		// close claws, target out of range/invalid
-		"melee_hit"			"Weapon_PhysCannon.CloseClaws"
-		// drop object
-		"melee_miss"		"Weapon_PhysCannon.Drop"
+		special2 weapon_physcannon.openclaws
 		// too heavy
-		"special3"		"Weapon_PhysCannon.TooHeavy"
+		special3 weapon_physcannon.tooheavy
+		// close claws, target out of range/invalid
+		melee_hit weapon_physcannon.closeclaws
+		// drop object
+		melee_miss weapon_physcannon.drop
+
 	}
 
-	// Weapon Sprite data is loaded by the Client DLL.
-	TextureData
+	texturedata
 	{
-		"weapon"
+
+		weapon
 		{
-				"font"		"WeaponIcons"
-				"character"	"m"
+
+			font weaponicons
+			character m
+
 		}
-		"weapon_s"
+
+		weapon_s
 		{	
-				"font"		"WeaponIconsSelected"
-				"character"	"m"
+
+			font weaponiconsselected
+			character m
+
 		}
-		"crosshair"
+
+		crosshair
 		{
-				"font"		"Crosshairs"
-				"character"	"Q"
+
+			font crosshairs
+			character Q
+
 		}
-		"autoaim"
+
+		autoaim
 		{
-			"file"		"sprites/crosshairs"
-			"x"			"48"
-			"y"			"72"
-			"width"		"24"
-			"height"	"24"
+
+			font crosshairs
+			character Q
+
 		}
+
 	}
+
 }

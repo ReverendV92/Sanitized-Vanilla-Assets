@@ -1,64 +1,76 @@
+
+//////////////////////////////
 // Physics Gun
+// Unused
+//////////////////////////////
 
-WeaponData
+weapondata
 {
-	// Weapon data is loaded by both the Game and Client DLLs.
-	"printname"	"#HL2_Physgun"
-	"viewmodel"				"models/weapons/v_Physics.mdl"
-	"playermodel"			"models/weapons/w_Physics.mdl"
-	"anim_prefix"			"physgun"
-	"bucket"				"4"
-	"bucket_position"		"4"
 
-	"clip_size"				"1"
-	"clip2_size"			"8"
-	"primary_ammo"			"None"
-	"secondary_ammo"		"Gravity"
-	"default_clip2"			"8"
+	printname #hl2_physgun
+	viewmodel models/weapons/v_physics.mdl
+	playermodel models/weapons/w_physics.mdl
+	anim_prefix physgun
 
-	"weight"				"0"
-	"item_flags"			"2"
+	bucket 4
+	bucket_position 4
 
-	SoundData
+	primary_ammo None
+	clip_size 1
+
+	secondary_ammo gravity
+	clip2_size 8
+	default_clip2 8
+
+	weight 0
+	item_flags 2
+
+	sounddata
 	{
-		"single_shot"		"Weapon_Physgun.On"
-		"reload"			"Weapon_Physgun.Off"
-		"special1"			"Weapon_Physgun.Special1"
+
+		single_shot weapon_physgun.on
+
+		reload weapon_physgun.off
+
+		special1 weapon_physgun.special1
+
 	}
 
-	// Weapon Sprite data is loaded by the Client DLL.
-	TextureData
+	texturedata
 	{
-		"weapon"
+
+		weapon
 		{
-				"font"		"WeaponIcons"
-				"character"	"m"
+
+			font weaponicons
+			character m
+
 		}
-		"weapon_s"
+
+		weapon_s
 		{	
-				"font"		"WeaponIconsSelected"
-				"character"	"m"
+
+			font weaponiconsselected
+			character m
+
 		}
-		"crosshair"
+
+		crosshair
 		{
-				"font"		"Crosshairs"
-				"character"	"Q"
+
+			font crosshairs
+			character Q
+
 		}
-		"autoaim"
+
+		autoaim
 		{
-			"file"		"sprites/crosshairs"
-			"x"			"48"
-			"y"			"72"
-			"width"		"24"
-			"height"	"24"
+
+			font crosshairs
+			character Q
+
 		}
-		"autoaim"
-		{
-				"file"		"sprites/crosshairs"
-				"x"			"48"
-				"y"			"72"
-				"width"		"24"
-				"height"	"24"
-		}
+
 	}
+
 }

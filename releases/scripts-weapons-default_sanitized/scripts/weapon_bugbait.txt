@@ -1,5 +1,7 @@
 
+//////////////////////////////
 // Bug Bait
+//////////////////////////////
 
 weapondata
 {
@@ -14,61 +16,62 @@ weapondata
 	bucket_360 3
 	bucket_position_360 2
 
+	primary_ammo None
 	clip_size 0
 	default_clip 0
-	primary_ammo None
-	
+
+	secondary_ammo None
 	clip2_size 0
 	default_clip2 0
-	secondary_ammo None
 
 	autoswitchto 0
 	autoswitchfrom 0
+
 	weight 0
-	rumble 1
-	item_flags 64
+	item_flags 0
+	rumble 9
 
 	texturedata
 	{
 
 		weapon
 		{
-			font WeaponIcons
+
+			font weaponicons
 			character j
+
 		}
+
 		weapon_s
-		{ 
-			font WeaponIconsSelected
+		{	
+
+			font weaponiconsselected
 			character j
+
 		}
+
 		ammo
 		{
-			font WeaponIcons
+
+			font weaponicons
 			character j
+
 		}
 
 		crosshair
 		{
-			font Crosshairs
+
+			font crosshairs
 			character Q
+
 		}
 
 		autoaim
 		{
-			font Crosshairs
-			character Q
-		}
 
-		zoom
-		{
-			font Crosshairs
+			font crosshairs
 			character Q
-		}
 
-		zoom_autoaim
-		{
-			font Crosshairs
-			character Q
 		}
 
 	}

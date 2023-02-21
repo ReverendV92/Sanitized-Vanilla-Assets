@@ -1,6 +1,7 @@
 
-// Combine Overwatch Standard-Issue Pulse Rifle
-// Or just AR2 if you're not Mossman
+//////////////////////////////
+// Overwatch Standard-Issue Pulse Rifle (OSIPR)
+//////////////////////////////
 
 weapondata
 {
@@ -9,35 +10,42 @@ weapondata
 	viewmodel models/weapons/v_irifle.mdl
 	playermodel models/weapons/w_irifle.mdl
 	anim_prefix ar2
+
 	bucket 2
 	bucket_position 1
 	bucket_360 1
 	bucket_position_360 2
 
+	primary_ammo ar2
 	clip_size 30
 	default_clip 30
 
-	clip2_size -1
-	default_clip2 -1
-
-	primary_ammo ar2
 	secondary_ammo ar2altfire
+	clip2_size -1
+	default_clip2 0
 
-	weight 5
-	rumble 4
+	autoswitchto 0
+	autoswitchfrom 0
+
+	weight 0
 	item_flags 32
+	rumble 4
 
 	sounddata
 	{
 
-		double_shot Weapon_IRifle.Single
-		empty Weapon_IRifle.Empty
-		special1 Weapon_CombineGuard.Special1
-		single_shot_npc Weapon_AR2.NPC_Single
-		// reload Weapon_AR2.Reload
-		// single_shot Weapon_AR2.Single
-		// reload_npc Weapon_AR2.NPC_Reload
-		// double_shot_npc Weapon_AR2.NPC_Double
+		empty weapon_irifle.empty
+
+		single_shot weapon_ar2.single
+		single_shot_npc weapon_ar2.npc_single
+
+		double_shot weapon_irifle.single
+		double_shot_npc weapon_ar2.npc_double
+
+		reload weapon_ar2.reload
+		reload_npc weapon_ar2.npc_reload
+
+		special1 weapon_combineguard.special1
 
 	}
 
@@ -47,64 +55,57 @@ weapondata
 		weapon
 		{
 
-		font WeaponIcons
-		character l
+			font weaponicons
+			character l
 
 		}
-		weapon_s
-		{ 
 
-		font WeaponIconsSelected
-		character l
+		weapon_s
+		{	
+
+			font weaponiconsselected
+			character l
 
 		}
 
 		weapon_small
 		{
 
-		font WeaponIconsSmall
-		character l
+			font weaponiconssmall
+			character l
 
 		}
 
 		ammo
 		{
 
-		font WeaponIconsSmall
-		character u
+			font weaponiconssmall
+			character u
 
 		}
 
 		ammo2
 		{
 
-		font WeaponIconsSmall
-		character z
+			font weaponiconssmall
+			character z
 
 		}
 
 		crosshair
 		{
-			font Crosshairs
+
+			font crosshairs
 			character Q
+
 		}
 
 		autoaim
 		{
-			font Crosshairs
-			character Q
-		}
 
-		zoom
-		{
-			font Crosshairs
+			font crosshairs
 			character Q
-		}
 
-		zoom_autoaim
-		{
-			font Crosshairs
-			character Q
 		}
 
 	}
