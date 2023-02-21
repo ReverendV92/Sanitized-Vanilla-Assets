@@ -1,0 +1,85 @@
+
+// Citizen Ration
+
+weapondata
+{
+
+	printname "Food Ration"
+	viewmodel models/weapons/w_package.mdl
+	playermodel models/weapons/w_package.mdl
+	anim_prefix smg2
+	bucket 2
+	bucket_position 0
+	bucket_360 3
+	bucket_position_360 4
+
+	clip_size -1
+	default_clip -1
+	primary_ammo None
+
+	clip2_size -1
+	default_clip2 -1
+	secondary_ammo None
+
+	weight 0
+	rumble 1
+	item_flags 194
+
+	sounddata
+	{
+	}
+
+	texturedata
+	{
+
+		weapon
+		{
+			font WeaponIcons
+			character b
+		}
+
+		weapon_s
+		{ 
+			font WeaponIconsSelected
+			character b
+		}
+
+		weapon_small
+		{
+			font WeaponIconsSmall
+			character b
+		}
+
+		ammo
+		{
+			font WeaponIconsSmall
+			character s
+		}
+
+		crosshair
+		{
+			font Crosshairs
+			character Q
+		}
+
+		autoaim
+		{
+			font Crosshairs
+			character Q
+		}
+
+		zoom
+		{
+			font Crosshairs
+			character Q
+		}
+
+		zoom_autoaim
+		{
+			font Crosshairs
+			character Q
+		}
+
+	}
+
+}

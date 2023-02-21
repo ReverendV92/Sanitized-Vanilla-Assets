@@ -1,0 +1,71 @@
+
+// Crowbar
+
+weapondata
+{
+	printname #hl2_crowbar
+	viewmodel models/weapons/v_crowbar.mdl
+	playermodel models/weapons/w_crowbar.mdl
+	anim_prefix crowbar
+	bucket 0
+	bucket_position 0
+	bucket_360 2
+	bucket_position_360 0
+
+	clip_size -1
+	default_clip -1
+	primary_ammo None
+
+	clip2_size -1
+	default_clip2 -1
+	secondary_ammo None
+
+	weight 0
+	rumble 9
+	item_flags 32
+
+	sounddata
+	{
+
+		single_shot Weapon_Crowbar.Single
+		melee_hit Weapon_Crowbar.Melee_Hit
+		melee_hit_world Weapon_Crowbar.Melee_HitWorld
+
+	}
+
+	texturedata
+	{
+
+		weapon
+		{
+			font WeaponIcons
+			character c
+		}
+
+		weapon_s
+		{ 
+			font WeaponIconsSelected
+			character c
+		}
+
+		ammo
+		{
+			font WeaponIcons
+			character c
+		}
+
+		crosshair
+		{
+			font Crosshairs
+			character Q
+		}
+
+		autoaim
+		{
+			font Crosshairs
+			character Q
+		}
+
+	}
+
+}

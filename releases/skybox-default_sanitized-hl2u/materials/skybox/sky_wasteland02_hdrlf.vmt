@@ -1,0 +1,12 @@
+
+sky
+{
+
+	$basetexture skybox/sky_wasteland02lf
+	$hdrbasetexture skybox/sky_wasteland02lf
+
+	$nofog 1
+	$nomip 1
+	$ignorez 1
+
+}

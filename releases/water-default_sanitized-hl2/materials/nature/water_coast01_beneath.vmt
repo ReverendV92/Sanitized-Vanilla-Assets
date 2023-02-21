@@ -1,0 +1,48 @@
+
+water
+{
+
+	%tooltexture nature/water_coast01_normal
+	%compilewater 1
+	
+	$abovewater 0
+	$underwateroverlay effects/water_warp01
+	$surfaceprop water
+	$scale "[ 7 7 ]"
+
+	$bumpframe 0
+	$bumpmap nature/water_coast01_dudv
+	$normalmap nature/water_coast01_normal
+
+	$refracttexture _rt_WaterRefraction
+	$refractamount 1
+
+	$fogenable 1
+	$fogcolor "{ 7 16 18 }"
+	$fogstart -256
+	$fogend 512
+
+	$scroll1 "[ 0.01 0.01 0.05 ]"
+	$scroll2 "[ -0.025 0.025 0.075 ]"
+
+	Proxies
+	{
+		TextureScroll
+		{
+			texturescrollvar $bumptransform
+			texturescrollrate 0.05
+			texturescrollangle 45
+		}
+
+		WaterLOD
+		{
+		}
+
+	}
+
+	<dx90
+	{
+		$fallbackmaterial nature/water_coast01_dx8
+	}
+
+}

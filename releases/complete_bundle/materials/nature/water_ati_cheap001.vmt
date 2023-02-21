@@ -1,0 +1,57 @@
+
+water
+{
+
+	%tooltexture dev/water_normal
+	%compilewater 1
+
+	$abovewater 1
+	$bottommaterial nature/water_ati_beneath
+	$surfaceprop water
+	$scale "[ 1 1 ]"
+
+	$forcecheap 1
+	$cheapwaterstartdistance 500
+	$cheapwaterenddistance 1000
+
+	$bumpframe 0
+	$bumpmap dev/water_dudv
+	$normalmap dev/water_normal
+
+	$envmap env_cubemap
+	$refracttexture _rt_waterrefraction
+	$refractamount 0.1
+
+	$reflecttexture _rt_waterreflection
+	$reflectamount 1.5
+	$reflecttint "[ 1 1 1 ]"
+
+	$fogenable 1
+	$fogcolor "{ 20 42 37 }"
+	$fogstart 1
+	$fogend 100
+
+	Proxies
+	{
+	
+		AnimatedTexture
+		{
+			animatedtexturevar $normalmap
+			animatedtextureframenumvar $bumpframe
+			animatedtextureframerate 30
+		}
+
+		TextureScroll
+		{
+			texturescrollvar $bumptransform
+			texturescrollrate 0.05
+			texturescrollangle 45
+		}
+
+		WaterLOD
+		{
+		}
+
+	}
+
+}

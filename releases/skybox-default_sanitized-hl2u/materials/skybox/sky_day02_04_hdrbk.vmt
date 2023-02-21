@@ -1,0 +1,12 @@
+
+sky
+{
+
+	$basetexture skybox/sky_day02_04bk
+	$hdrcompressedtexture skybox/sky_day02_04_hdrbk
+
+	$nofog 1
+	$nomip 1
+	$ignorez 1
+
+}

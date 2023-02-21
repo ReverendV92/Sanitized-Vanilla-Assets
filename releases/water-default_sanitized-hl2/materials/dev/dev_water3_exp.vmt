@@ -1,0 +1,56 @@
+// This file is intended to be used ONLY as expensive, but Valve is the only one who probably cared to follow that. If you REALLY need $forceexpensive, either edit it or make a custom material.
+water
+{
+
+	%tooltexture dev/water_normal
+	%compilewater 1
+
+	$abovewater 1
+	$bottommaterial dev/dev_water3_beneath
+	$surfaceprop water
+	$scale "[ 1 1 ]"
+
+	$bumpframe 0
+	$bumpmap dev/water_dudv
+	$normalmap dev/water_normal
+
+	$reflecttexture _rt_waterreflection
+	$reflectamount 0.8
+
+	$refracttexture _rt_waterrefraction
+	$refractamount 0.8
+
+	$fogenable 1
+	$fogcolor "{ 22 20 10 }"
+	$fogstart 1
+	$fogend 70
+
+	Proxies
+	{
+
+		AnimatedTexture
+		{
+			animatedtexturevar $normalmap
+			animatedtextureframenumvar $bumpframe
+			animatedtextureframerate 30
+		}
+
+		TextureScroll
+		{
+			texturescrollvar $bumptransform
+			texturescrollrate 0.05
+			texturescrollangle 45
+		}
+
+		WaterLOD
+		{
+		}
+
+	}
+
+	water_dx60
+	{
+		$fallbackmaterial nature/sewer_waterdarkfog_dx70
+	}
+
+}

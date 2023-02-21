@@ -1,0 +1,13 @@
+
+sky
+{
+
+	$basetexture skybox/sky_day02_02ft
+	$hdrcompressedtexture skybox/sky_day02_02_hdrft
+	$basetexturetransform "center 0 0 scale 1 2 rotate 0 translate 0 0"
+
+	$nofog 1
+	$nomip 1
+	$ignorez 1
+
+}

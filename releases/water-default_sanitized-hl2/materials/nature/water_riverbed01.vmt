@@ -1,0 +1,53 @@
+
+water
+{
+
+	%tooltexture nature/water_frame01_normal
+	%compilewater 1
+
+	$abovewater 1
+	$bottommaterial nature/water_riverbed01_beneath
+	$surfaceprop water
+	$scale "[ 1 1 ]"
+
+	$bumpframe 0
+	$bumpmap nature/water_frame01_dudv
+	$normalmap nature/water_frame01_normal
+
+	$envmap env_cubemap
+	$refracttexture _rt_WaterRefraction
+	$refractamount 2
+
+	$reflecttexture _rt_WaterReflection
+	$reflectamount 0.2
+
+	$fogenable 1
+	$fogcolor "{ 7 16 18 }"
+	$fogstart 1
+	$fogend 196
+
+	$scroll1 "[ 0.01 0.01 0.05 ]"
+	$scroll2 "[ -0.025 0.025 0.075 ]"
+
+	Proxies
+	{
+
+		TextureScroll
+		{
+			texturescrollvar $bumptransform
+			texturescrollrate 0.02
+			texturescrollangle 25
+		}
+
+		WaterLOD
+		{
+		}
+
+	}
+
+	<dx90
+	{
+		$fallbackmaterial nature/water_riverbed01_dx8
+	}
+
+}

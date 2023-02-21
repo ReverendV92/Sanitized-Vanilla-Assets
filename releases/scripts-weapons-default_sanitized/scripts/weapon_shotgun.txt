@@ -1,0 +1,81 @@
+
+// Shotgun
+
+weapondata
+{
+
+	printname #hl2_shotgun
+	viewmodel models/weapons/v_shotgun.mdl
+	playermodel models/weapons/w_shotgun.mdl
+	anim_prefix shotgun
+	bucket 3
+	bucket_position 0
+	bucket_360 1
+	bucket_position_360 1
+
+	clip_size 6
+	default_clip 6
+	primary_ammo Buckshot
+
+	clip2_size -1
+	default_clip2 -1
+	secondary_ammo None
+
+	weight 0
+	rumble 5
+	item_flags 0
+
+	sounddata
+	{
+
+		single_shot_npc weapon_shotgun.npc_single
+		reload weapon_shotgun.reload
+		special1 weapon_shotgun.special1
+		empty weapon_shotgun.empty
+		single_shot weapon_shotgun.single
+		double_shot weapon_shotgun.double
+
+	}
+
+	texturedata
+	{
+
+		weapon
+		{
+			font WeaponIcons
+			character b
+		}
+
+		weapon_s
+		{	
+			font WeaponIconsSelected
+			character b
+		}
+
+		weapon_small
+		{
+			font WeaponIconsSmall
+			character b
+		}
+
+		ammo
+		{
+			font WeaponIconsSmall
+			character s
+		}
+
+		crosshair
+		{
+			font Crosshairs
+			character Q
+		}
+
+		autoaim
+		{
+			font Crosshairs
+			character Q
+		}
+
+	}
+
+}

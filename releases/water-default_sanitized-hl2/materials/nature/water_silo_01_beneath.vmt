@@ -1,0 +1,54 @@
+
+water
+{
+
+	%tooltexture dev/water_normal
+	%compilewater 1
+
+	$abovewater 0
+	$underwateroverlay effects/water_warp01
+	$surfaceprop water
+	$scale "[ 10 10 ]"
+
+	$bumpframe 0
+	$bumpmap nature/water_frame01_dudv
+	$normalmap nature/water_frame01_normal
+
+	$refracttexture _rt_WaterRefraction
+	$refractamount 0.5
+
+	$fogenable 1
+	$fogcolor "{ 40 34 27 }"
+	$fogstart -300
+	$fogend 560
+
+	$scroll1 "[ 0.01 0.01 0.05 ]"
+	$scroll2 "[ -0.025 0.025 0.075 ]"
+
+	Proxies
+	{
+
+		TextureScroll
+		{
+			texturescrollvar $bumptransform
+			texturescrollrate 0.05
+			texturescrollangle 45
+		}
+
+		WaterLOD
+		{
+		}
+
+	}
+
+	water_dx81
+	{
+		$refractamount 0.2
+	}
+
+	water_dx80
+	{
+		$refractamount 0.2
+	}
+
+}
