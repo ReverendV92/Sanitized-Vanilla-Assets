@@ -1,0 +1,23 @@
+// Created by Crowbar 0.74
+version 1
+nodes
+  0 "Manhack.MH_Control" -1
+  1 "Manhack.MH_ControlBodyUpper" 0
+  2 "Manhack.MH_ControlPincerTop" 1
+  3 "Manhack.MH_ControlPanel6" 1
+  4 "Manhack.MH_ControlPanel1" 1
+  5 "Manhack.MH_ControlPanel2" 1
+  6 "Manhack.MH_ControlPanel3" 1
+  7 "Manhack.MH_ControlExhaust" 1
+  8 "Manhack.MH_ControlBodyLower" 0
+  9 "Manhack.MH_ControlPincerBottom" 8
+  10 "Manhack.MH_ControlPanel4" 8
+  11 "Manhack.MH_ControlPanel5" 8
+  12 "Manhack.MH_ControlCamera" 8
+  13 "Manhack.MH_ControlBlade" 0
+  14 "Manhack.MH_ControlBlade1" 0
+end
+skeleton
+  time 0
+    0 0.000000 0.000000 0.000000 0.000000 0.000000 -1.570796
+end

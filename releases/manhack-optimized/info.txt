@@ -1,0 +1,18 @@
+Info
+{
+	"name"				"Optimized Manhack"
+	"description"		"The Manhack models, tweaked to be less shit."
+
+	"version"			"2023-03-12"
+	"created"			"2023-03-12"
+	"modified"			"2023-03-12"
+
+	"creator"
+	{
+		"name"			"V92"
+		"contact"		"https://steamcommunity.com/profiles/76561197998218505"
+		"url"			"https://steamcommunity.com/profiles/76561197998218505"
+	}
+
+	"override"			true
+}
