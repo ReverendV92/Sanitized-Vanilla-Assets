@@ -1,0 +1,8 @@
+
+lightmappedgeneric
+{
+
+	$basetexture nature/grassfloor003a
+	$surfaceprop grass
+
+}
