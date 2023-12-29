@@ -1,0 +1,10 @@
+
+lightmappedgeneric
+{
+
+	$basetexture nature/forest_gravel_01
+	$surfaceprop dirt
+
+	%keywords "ep2"
+
+}
